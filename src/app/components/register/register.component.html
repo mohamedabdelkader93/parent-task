@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form *ngIf="registerF" name="form" #f="ngForm" [formGroup]="registerF" (ngSubmit)="f.form.valid && onSubmit()">
+                <h2>
+                    <span>Register</span>
+                </h2>
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email" id="email" formControlName="email" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password" id="password" formControlName="password" />
+                </div>
+                <button class="btn btn-primary" type="submit">Register</button>
+            </form>
+        </div>
+
+    </div>
+</div>

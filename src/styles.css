@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+
+body {
+    color: #00000080
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+    width: 35%;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.main-body {
+    margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}

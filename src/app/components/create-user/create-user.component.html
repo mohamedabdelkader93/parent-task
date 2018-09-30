@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form *ngIf="createF" name="form" #f="ngForm" [formGroup]="createF" (ngSubmit)="f.form.valid && onSubmit()">
+                <h3>
+                    <span>Create User</span>
+                </h3>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="name" id="name" formControlName="name" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="job" id="job" formControlName="job" />
+                </div>
+                <button class="btn btn-primary" type="submit">Create user</button>
+            </form>
+        </div>
+
+    </div>
+</div>

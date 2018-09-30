@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Users List</h3>
+        </div>
+        <ng-container *ngFor="let user of usersList?.data">
+            <div class="col-md-3">
+                <div class="card">
+                    <a [routerLink]="['/user', user.id]">
+                        <img class="card-img-top" src="{{user.avatar}}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <a [routerLink]="['/user', user.id]">
+                            <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+                        </a>
+                        <button class="btn btn-danger" type="button" (click)="deleteUser(user)" *ngIf="loggedUser">Delete user</button>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

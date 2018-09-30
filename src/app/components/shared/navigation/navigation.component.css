@@ -1,0 +1,14 @@
+.bg-light {
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 5px #ddd;
+}
+
+.navbar-brand img {
+    height: 25px;
+}
+
+.note {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+.user-details-card {}
+
+.user-details-card .card-body {
+    text-align: center;
+}
+
+.user-details-card img {}
+
+.user-details-card p {
+    margin: 15px 0;
+}
